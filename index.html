@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人导航</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      background: #121212;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 520px;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+    .link-group {
+      margin-bottom: 30px;
+    }
+    .group-title {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(110px,1fr));
+      gap:12px;
+    }
+    .links a {
+      display:block;
+      padding:14px 8px;
+      background:#1e1e1e;
+      border-radius:10px;
+      text-align:center;
+      color:#fff;
+      text-decoration:none;
+      transition: all 0.2s;
+      font-size:15px;
+    }
+    .links a:hover {
+      background:#333;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>我的导航</h1>
+
+    <div class="link-group">
+      <div class="group-title">常用</div>
+      <div class="links">
+        <a href="https://github.com" target="_blank">Github</a>
+        <a href="https://bilibili.com" target="_blank">B站</a>
+        <a href="https://zhihu.com" target="_blank">知乎</a>
+        <a href="https://baidu.com" target="_blank">百度</a>
+      </div>
+    </div>
+
+    <div class="link-group">
+      <div class="group-title">工具</div>
+      <div class="links">
+        <a href="https://codepen.io" target="_blank">CodePen</a>
+        <a href="https://notion.so" target="_blank">Notion</a>
+        <a href="https://canva.com" target="_blank">Canva</a>
+      </div>
+    </div>
+
+    <div class="link-group">
+      <div class="group-title">学习</div>
+      <div class="links">
+        <a href="https://mdn.io" target="_blank">MDN</a>
+        <a href="https://csdn.net" target="_blank">CSDN</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
